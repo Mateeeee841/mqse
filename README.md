@@ -1,3 +1,3 @@
-[![Deploy](hhtps://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mateeeee841/Mi-cv-online)
+[![Deploy](hhtps://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mateeeee841/mqse)
 
 # Mi-cv-online
