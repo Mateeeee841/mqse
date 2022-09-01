@@ -15,14 +15,73 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'inicio/css/styles.css' %}" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-upper text-primary mb-3">A Free Bootstrap Business Theme</span>
-                <span class="site-heading-lower">Business Casual</span>
+        <style>
+            .slider {
+                width: 95%;
+                margin: auto;
+                overflow: hidden;
+            }
+            
+            .slider ul {
+                display: flex;
+                padding: 0;
+                width: 400%;
+                
+                 animation: cambio 20s alternate linear; /*duracion de la animación , Agregar infinite para que la animación sea infinita*/
+            }
+            
+            .slider li {
+                width: 100%;
+                list-style: none;
+            }
+            
+            .slider img {
+                width: 100%;
+            }
+            
+            @keyframes cambio {
+                0% {margin-left: 0;}
+                20% {margin-left: 0;}
+                
+                25% {margin-left: -100%;}
+                45% {margin-left: -100%;}
+                
+                50% {margin-left: -200%;}
+                70% {margin-left: -200%;}
+                
+                75% {margin-left: -300%;}
+                100% {margin-left: -300%;}
+            }
+            .static{
+                animation-play-state: paused;               /*Para que la animación no termine borra esto */
+            }
+                    </style>
+                </head>
+            
+                <body>
+                    <header>
+                        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                            <span class="site-heading-upper text-primary mb-3">Erica Maryncak</span>
+                            <div class="slider">
+                            <ul>
+                                <li>
+                                    <span class="site-heading-lower">UNO</span>
+                                </li>
+                                    <li>
+                                        <span class="site-heading-lower">DOS</span>
+                </li>
+                                <li>
+                                    <span class="site-heading-lower">TRES</span>
+                </li>
+                                <li>
+                                    <span class="site-heading-lower">CUATRO</span>
+                </li>
+                            </ul>
+                            
+                        </div>
             </h1>
-        </header>
+                        
+                    </header>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
@@ -96,7 +155,7 @@
         </section>
         <section class="page-section about-heading">
             <div class="container">
-                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'inicio\assets\img\about.jpg'%}" alt="..." />
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg" alt="..." />
                 <div class="about-heading-content">
                     <div class="row">
                         <div class="col-xl-9 col-lg-10 mx-auto">
