@@ -15,26 +15,40 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'inicio/css/styles.css' %}" rel="stylesheet" />
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>   
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>  
+
         <style>
-            @media (max-width: 750px) {
 
-.form-control{
-    width: 250px;
-}
+@media (max-width: 750px) {
 
-.texto_mensaje{
-    width: 250px;
-    height: 100px;
-}
-}
+        .form-control{
+            background-color:#f6e1c5 ;
+            border-color: #f6e1c5;
+            width: 188px;
+        }
+
+        .texto_mensaje{
+            background-color:#f6e1c5 ;
+            border-color:  rgb(230, 167, 86, 0.5);
+            width: 190;
+            height: 100px;
+        }
+    }
+
 @media (min-width: 750px) {
-.texto_mensaje{
-    width: 500px;
-    height: 100px;
-}
+        .texto_mensaje{
+            background-color:#f6e1c5 ;
+            border-color:  rgb(230, 167, 86, 0.5);
+            width: 360px;
+            height: 100px;
+                    }
+        .form-control{
+            background-color:#f6e1c5 ;
+            border-color: #f6e1c5;
+            width: 300px;
+        }
 
-}
+    }
 
             .slider {
                 width: 95%;
@@ -78,6 +92,7 @@
 
 
                     </style>
+
                 </head>
             
                 <body>
@@ -135,18 +150,18 @@
                             <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                                 <li class="list-unstyled-item list-hours-item d-flex">
                                     <div class="form-floating">
-                                        <input type="text" name="nombre" autofocus="" autocapitalize="none"  maxlength="30" required="" id="id_username" class="form-control" style="background-color:#f6e1c5 ;border-color: #f6e1c5;width: 300px;"   >
+                                        <input type="text" name="nombre" autofocus="" autocapitalize="none"  maxlength="30" required="" id="id_username" class="form-control" >
                                         <label for="floatingInput" >Nombre y Apellido</label>
                                       </div>
                                 </li>
                                 <li class="list-unstyled-item list-hours-item d-flex">
                                     <div class="form-floating">
-                                        <input type="email" name="email"  autofocus="" autocapitalize="none"  maxlength="200" required="" id="id_username" class="form-control" style="background-color:#f6e1c5 ;border-color: #f6e1c5;width: 300px;" >
+                                        <input type="email" name="email"  autofocus="" autocapitalize="none"  maxlength="200" required="" id="id_username" class="form-control" >
                                         <label for="floatingInput">Email</label>
                                       </div>
                                 </li>
                                
-                                    <textarea name="mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Consulta"  maxlength="200"  style="background-color:#f6e1c5 ;border-color:  rgb(230, 167, 86, 0.5);width: 360px;height: 100px;"></textarea> 
+                                    <textarea name="mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Consulta"  maxlength="200"></textarea> 
                                 <li>
                                     <br>
                                     <div class="g-recaptcha" data-sitekey="6Lc7lqshAAAAAKBEYeXA8Acoq-6RM1__Xx5zDHDT"></div>
