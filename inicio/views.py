@@ -31,14 +31,11 @@ def ver_store(request):
     documento= plantilla.render (context)    
     return HttpResponse(documento)
 
+
 class Consultas(CreateView):
     model=Consulta
-    success_url=reverse_lazy("vercvesp")            
+    success_url=reverse_lazy("consultas")            
     template_name="contacto.html"
     fields=["nombre","mensaje","email"]
 
-class contact(CreateView):
-    model=Consulta
-    success_url=reverse_lazy("vercv")            
-    template_name="contact.html"
-    fields=["nombre","mensaje","email"]
+

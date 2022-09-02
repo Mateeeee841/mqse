@@ -1,99 +1,156 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    {% load static %}
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Contacto</title>
-        <link rel="icon" type="image/x-icon" href="{% static 'inicio\assets\img\favicon.ico'%}" />
+        <title>Business Casual - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'inicio/css/styles.css' %}" rel="stylesheet" />
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>   
         <style>
-            @media (max-width: 750px) {
-
-            .form-control{
-                width: 250px;
+            .slider {
+                width: 95%;
+                margin: auto;
+                overflow: hidden;
             }
-
-            .texto_mensaje{
-                width: 250px;
-                height: 100px;
+            
+            .slider ul {
+                display: flex;
+                padding: 0;
+                width: 400%;
+                
+                 animation: cambio 20s alternate linear; /*duracion de la animación , Agregar infinite para que la animación sea infinita*/
             }
-        }
-         @media (min-width: 750px) {
-            .texto_mensaje{
-                width: 500px;
-                height: 100px;
+            
+            .slider li {
+                width: 100%;
+                list-style: none;
             }
-         
-         }
-        </style>
-    </head>
-
-    <body id="page-top">
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{%url 'vercvesp'%}" >Volver</a></li>
-                </ul>
+            
+            .slider img {
+                width: 100%;
+            }
+            
+            @keyframes cambio {
+                0% {margin-left: 0;}
+                20% {margin-left: 0;}
+                
+                25% {margin-left: -100%;}
+                45% {margin-left: -100%;}
+                
+                50% {margin-left: -200%;}
+                70% {margin-left: -200%;}
+                
+                75% {margin-left: -300%;}
+                100% {margin-left: -300%;}
+            }
+            .static{
+                animation-play-state: paused;               /*Para que la animación no termine borra esto */
+            }
+                    </style>
+                </head>
+            
+                <body>
+                    <header>
+                        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                            <span class="site-heading-upper text-primary mb-3">Mujeres que se encuentran</span>
+                            <div class="slider">
+                            <ul>
+                                <li>
+                                    <span class="site-heading-lower">UNO</span>
+                                </li>
+                                    <li>
+                                        <span class="site-heading-lower">DOS</span>
+                </li>
+                                <li>
+                                    <span class="site-heading-lower">TRES</span>
+                </li>
+                                <li>
+                                    <span class="site-heading-lower">CUATRO</span>
+                </li>
+                            </ul>
+                            
+                        </div>
+            </h1>
+                        
+                    </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">ERICA MARYNCAK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{%url 'index'%}">Inicio</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{%url 'acm'%}">Acerca de nostros</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{%url 'productos'%}">Retiros</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{%url 'store'%}">Agenda</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{%url 'consultas'%}">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <section class="resume-section" id="interests">
-        <form method="post" onsubmit="miFuncion()" >
-            {%csrf_token%}
-            
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                </svg>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded" >
+                            <h2 class="section-heading mb-5">
+                                <span class="section-heading-upper">Formulario</span>
+                                <span class="section-heading-lower">Contacto</span>
+                            </h2>
+                            <form method="post" onsubmit="miFuncion()" >    
+                                {%csrf_token%}      
+                                <div class="formulario" >      
+                            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    <div class="form-floating">
+                                        <input type="text" name="nombre" autofocus="" autocapitalize="none"  maxlength="30" required="" id="id_username" class="form-control" style="background-color:#f6e1c5 ;border-color: #f6e1c5;width: 300px;"   >
+                                        <label for="floatingInput" >Nombre y Apellido</label>
+                                      </div>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    <div class="form-floating">
+                                        <input type="email" name="email"  autofocus="" autocapitalize="none"  maxlength="200" required="" id="id_username" class="form-control" style="background-color:#f6e1c5 ;border-color: #f6e1c5;width: 300px;" >
+                                        <label for="floatingInput">Email</label>
+                                      </div>
+                                </li>
+                               
+                                    <textarea name="mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Consulta"  maxlength="200"  style="background-color:#f6e1c5 ;border-color:  rgb(230, 167, 86, 0.5);width: 400px;height: 100px;"></textarea> 
+                                <li>
+                                    <br>
+                                    <div class="g-recaptcha" data-sitekey="6Lc7lqshAAAAAKBEYeXA8Acoq-6RM1__Xx5zDHDT"></div>
+                                </li>
 
-                <div class="formulario" >      
-                    <h3>Contacto</h3>                
-            
-                        {%csrf_token%}                                        
-                            <p>
-                                <div class="form-floating">
-                                    <input type="text" name="nombre" autofocus="" autocapitalize="none"  maxlength="30" required="" id="id_username" class="form-control"   >
-                                    <label for="floatingInput" >Nombre y Apellido</label>
-                                  </div>
-                            </p>       
-                              
-                            <p>                    
-                            <div class="form-floating">
-                                <input type="email" name="email"  autofocus="" autocapitalize="none"  maxlength="200" required="" id="id_username" class="form-control"  >
-                                <label for="floatingInput">Email</label>
-                              </div>
-                            </p>        
-                                                    <textarea name="mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Consulta"  maxlength="200"></textarea> 
-                             <br>
-                             <br>
-                                <div class="form-floating" >
-                                <div class="g-recaptcha" data-sitekey="6Lc7lqshAAAAAKBEYeXA8Acoq-6RM1__Xx5zDHDT"></div>
-                                </div>
-                              <br>
-                              <button class="w-100 btn btn-lg btn-primary"  onclick="checkRecaptcha();" type="submit" >Enviar</button>  
-                </div>  
-              </div>
-              </form>
-        
-        <hr class="m-0" />
-    </div>
+                            </ul>
+                            <div class="form-floating" >
+                            
+                           
+                              <button class="w-100 btn btn-lg btn-primary"  onclick="checkRecaptcha();" type="submit" >Enviar</button> 
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2022</p></div>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <br>
-        
-
+        <script src="{% static 'inicio/js/scripts.js' %}"></script>
         <script>
             function miFuncion() {
               var response = grecaptcha.getResponse();
@@ -104,6 +161,10 @@
               } 
             }
           </script>
-       
     </body>
 </html>
+
+        
+        
+        
+       
