@@ -6,6 +6,11 @@ from django.views.generic.edit import CreateView
 from django.urls import reverse_lazy
 # Create your views here.
 
+def ver_mas(request):
+    context={}
+    plantilla=loader.get_template("mas.html")  
+    documento= plantilla.render (context)    
+    return HttpResponse(documento)
 
 def ver_index(request):
     context={}
