@@ -21,7 +21,6 @@
                 margin: auto;
                 overflow: hidden;
             }
-            
             .slider ul {
                 display: flex;
                 padding: 0;
@@ -54,6 +53,44 @@
             }
             .static{
                 animation-play-state: paused;               /*Para que la animación no termine borra esto */
+            }
+
+            .slider2 {
+                width: 95%;
+                margin: auto;
+                overflow: hidden;
+            }
+            .slider2 ul {
+                display: flex;
+                padding: 0;
+                width: 400%;
+                
+                animation: cambio 20s infinite alternate linear; 
+            }
+            
+            .slider2 li {
+                width: 100%;
+                list-style: none;
+            }
+            
+            .slider2 img {
+                width: 900px;
+                height: 550px;
+
+            }
+            
+            @keyframes cambio {
+                0% {margin-left: 0;}
+                20% {margin-left: 0;}
+                
+                25% {margin-left: -100%;}
+                45% {margin-left: -100%;}
+                
+                50% {margin-left: -200%;}
+                70% {margin-left: -200%;}
+                
+                75% {margin-left: -300%;}
+                100% {margin-left: -300%;}
             }
                     </style>
                 </head>
@@ -110,7 +147,16 @@
                             </h2>
                         </div>
                     </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'inicio\assets\img\products-01.jpg'%}" alt="..." />
+                   
+                        <div class="slider2">
+                            <ul>
+                            <li> <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'inicio\assets\img\products-02.jpg'%}" alt="..." /></li>
+                           <li> <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'inicio\assets\img\products-02.jpg'%}" alt="..." /></li>
+                           <li> <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'inicio\assets\img\products-02.jpg'%}" alt="..." /></li>
+                           <li> <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'inicio\assets\img\products-02.jpg'%}" alt="..." /></li>
+                        </div>
+                   
+                    
                     <div class="product-item-description d-flex me-auto">
                         <div class="bg-faded p-5 rounded"><p class="mb-0">We take pride in our work, and it shows. Every time you order a beverage from us, we guarantee that it will be an experience worth having. Whether it's our world famous Venezuelan Cappuccino, a refreshing iced herbal tea, or something as simple as a cup of speciality sourced black coffee, you will be coming back for more.</p></div>
                     </div>
