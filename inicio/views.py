@@ -30,6 +30,12 @@ def ver_productos(request):
     documento= plantilla.render (context)    
     return HttpResponse(documento)
 
+def ver_productos2(request):
+    context={}
+    plantilla=loader.get_template("products2.html")  
+    documento= plantilla.render (context)    
+    return HttpResponse(documento)
+
 def ver_store(request):
     context={}
     plantilla=loader.get_template("store.html")  
