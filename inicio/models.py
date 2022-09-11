@@ -8,6 +8,7 @@ class Consulta(models.Model):
     mensaje=models.TextField(max_length=200)
     email=models.EmailField()
     fecha=models.DateTimeField(auto_now_add=True)
+    numero=models.IntegerField()
     
 #con esto voy a ver el name de los pokemons en el django admin de la pagina
     def __str__(self):              
