@@ -7493,8 +7493,11 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  
+    padding-top: 0rem !important;
+    padding-bottom: 10rem !important;
+    height: 150px;
+
 }
 
 .pt-0 {
