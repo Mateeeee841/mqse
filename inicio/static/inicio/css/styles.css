@@ -173,6 +173,7 @@ address {
   line-height: inherit;
 }
 
+
 ol,
 ul {
   padding-left: 2rem;
@@ -11303,7 +11304,7 @@ p {
 }
 
 .site-heading {
-  margin-top: 10rem;
+  margin-top: 3rem;
   margin-bottom: 0rem;
   text-transform: uppercase;
   line-height: 1;
@@ -11327,6 +11328,7 @@ p {
 
 .section-heading {
   text-transform: uppercase;
+  
 }
 .section-heading .section-heading-upper {
   display: block;
@@ -11450,7 +11452,8 @@ p {
   .product-item .product-item-title {
     position: relative;
     z-index: 1;
-    margin-bottom: -3rem;
+    margin-bottom: -2.5rem;
+    margin-right: 600px;
   }
   .product-item .product-item-img {
     position: relative;
