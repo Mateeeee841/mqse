@@ -11334,13 +11334,15 @@ p {
   
 }
 .section-heading .section-heading-upper {
+  color: white;
   display: block;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 800;
 }
 .section-heading .section-heading-lower {
+  color: white;
   display: block;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 100;
 }
 
