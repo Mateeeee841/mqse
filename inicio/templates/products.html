@@ -158,29 +158,31 @@
                 </head>
             
                 <body>
-                    <header>
-                        <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                            <span class="site-heading-upper text-primary mb-3"><img src="{% static 'inicio\assets\img\titulo.png'%}" alt="" style="width:400px ;height: 125px;"></span>
-                            <div class="slider">
-                            <ul>
-                                <li>
-                                    <span class="site-heading-lower">CAMINAR JUNTAS</span>
-                                </li>
-                                    <li>
-                                        <span class="site-heading-lower">INSPIRARNOS</span>
-                </li>
-                                <li>
-                                    <span class="site-heading-lower">COMPARTIR</span>
-                </li>
-                                <li>
-                                    <span class="site-heading-lower">CREAR</span>
-                </li>
-                            </ul>
-                            
-                        </div>
-            </h1>
+                  <header>
+
+                    <h1 class="site-heading text-center text-faded d-none d-lg-block" >
                         
-                    </header>
+                        <div class="slider"><img src="{% static 'inicio\assets\img\titulo.png'%}" alt="" style="width:400px ;height: 125px;margin-left: 20px;">
+                            <p><img src="{% static 'inicio\assets\img\mujer.jpg'%}" style="width: 360px;margin-right: 1100px;margin-top: -154px;float: left;margin-bottom: -62px;margin-left: -5px;" alt=""></p>
+                        <ul>
+                            <li>
+                                <span class="site-heading-lower">CAMINAR JUNTAS</span>
+                            </li>
+                                <li>
+                                    <span class="site-heading-lower">INSPIRARNOS</span>
+            </li>
+                            <li>
+                                <span class="site-heading-lower">COMPARTIR</span>
+            </li>
+                            <li>
+                                <span class="site-heading-lower">CREAR</span>
+            </li>
+                        </ul>
+                        
+                    </div>
+        </h1>
+                    
+                </header>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
@@ -221,6 +223,10 @@
                       
                         <div class="mySlides1 fader ">
                           <img src="{%static 'inicio\assets\img\products-03.jpg' %}" style="width:100%">
+                        </div>
+
+                        <div class="mySlides1 fader ">
+                          <img src="{%static 'inicio\assets\img\products-04.jpg' %}" style="width:100%">
                         </div>
                       
                         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -270,11 +276,11 @@
         <footer class="footer text-faded text-center py-5">
           <div class="container">
               <p>
-                  <a href="https://api.whatsapp.com/send?phone=5491124846022&text=Hola,%20me%20interesa%20saber%20de%20Mujeres%20que%20se%20Encuentran">
-                      <img src="{% static 'inicio\assets\img\wpp.png'%}" alt="" style="width: 100px;height: 100px;margin-right: 20px;margin-bottom: 0px;margin-top: -20px;">
+                  <a style="text-decoration:none ;" href="https://api.whatsapp.com/send?phone=5491124846022&text=Hola,%20me%20interesa%20saber%20de%20Mujeres%20que%20se%20Encuentran">
+                      <img src="{% static 'inicio\assets\img\wpp.png'%}" alt="" style="width: 100px;height: 100px;margin-right: 20px;margin-bottom: 0px;margin-top: -10px;">
                   </a> 
-                  <a href="https://www.instagram.com/erimaryncak/">
-                      <img src="{% static 'inicio\assets\img\instagram.jpg'%}" alt="" style="width: 100px;height: 100px;margin-bottom: 0px;margin-top: -20px;">
+                  <a style="text-decoration:none ;" href="https://www.instagram.com/erimaryncak/">
+                      <img src="{% static 'inicio\assets\img\instagram.jpg'%}" alt="" style="width: 100px;height: 100px;margin-bottom: 0px;margin-top: -10px;">
                   </a>
                   <img src="{% static 'inicio\assets\img\foot.png'%}" alt="" style="margin-left: 300px;width: 150px;height: 150px;margin-top: 0px;">
               </p>
