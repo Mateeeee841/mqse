@@ -56,6 +56,20 @@
 .static{
     animation-play-state: paused;               /*Para que la animación no termine borra esto */
 }
+@media (min-width: 750px){
+    .img-fluid{
+        margin-top: 150px;
+    }
+    
+}
+@media (max-width: 750px){
+    body{
+        width:fit-content;
+    }
+    .img-fluid{
+        width: 200px;
+    }
+}
         </style>
     </head>
 
@@ -88,7 +102,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="{%url 'index'%}">Mujeres que se encuentran</a>
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" style="color: white;" href="{%url 'index'%}">Mujeres que se encuentran</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
@@ -113,7 +127,7 @@
                         <p class="mb-3" style="color: white;">El camino es personal, pero lo hacemos juntas</p>
                         <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" style="color: white;" href="{%url 'consultas'%}">BIENVENIDAS</a></div>
                     </div>
-                    <img class=" img-fluid mb-3 mb-lg-0 rounded" src="{% static 'inicio\assets\img\about.jpg'%}" style="margin-top: 150px;" alt="..." />
+                    <img class=" img-fluid mb-3 mb-lg-0 rounded" src="{% static 'inicio\assets\img\about.jpg'%}"  alt="..." />
         
                   
                 </div>

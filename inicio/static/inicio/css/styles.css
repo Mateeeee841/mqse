@@ -7493,10 +7493,8 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-  
-    padding-top: 0rem !important;
-    padding-bottom: 10rem !important;
-    height: 150px;
+    top: 80%;
+    height: 160px;
 
 }
 
@@ -11424,6 +11422,7 @@ p {
 
 .footer {
   background-color: #A43333;
+  
 }
 
 .intro {
