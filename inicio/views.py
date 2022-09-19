@@ -18,11 +18,7 @@ def ver_index(request):
     documento= plantilla.render (context)    
     return HttpResponse(documento)
 
-def ver_acerca_de_mi(request):
-    context={}
-    plantilla=loader.get_template("about.html")  
-    documento= plantilla.render (context)    
-    return HttpResponse(documento)
+
 
 def ver_productos(request):
     context={}
